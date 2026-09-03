@@ -272,7 +272,7 @@
   .fees-band{ background:var(--maroon); color:var(--paper-light); border-radius: var(--radius); padding: clamp(32px, 5vw, 56px); }
   .fees-band .eyebrow{ color:var(--brass-light); }
   .fees-band .h2{ color:var(--paper-light); margin-bottom:8px; }
-  .fees-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:32px; }
+  .fees-grid{ display:grid; grid-template-columns:1fr; max-width:480px; margin-top:32px; }
   .fee-card{
     border:1px solid rgba(244,238,223,0.28); border-radius:var(--radius);
     padding:clamp(24px,3vw,32px);
@@ -285,7 +285,6 @@
     letter-spacing:0.01em;
   }
   .fee-card .fee-note{ color:rgba(244,238,223,0.75); font-size:14.5px; margin:0; }
-  @media (max-width:700px){ .fees-grid{ grid-template-columns:1fr; } }
 
   /* ---------- Register CTA ---------- */
   .register-band{
@@ -483,13 +482,8 @@
       <h2 class="h2">Fee Structure</h2>
       <div class="fees-grid">
         <div class="fee-card">
-          <p class="caption">Independent Students</p>
-          <p class="fee-amount">£195</p>
-          <p class="fee-note">per student</p>
-        </div>
-        <div class="fee-card">
-          <p class="caption">Group Enrolment (5–10 students)</p>
-          <p class="fee-amount">£160</p>
+          <p class="caption">Registration Fee</p>
+          <p class="fee-amount">£150</p>
           <p class="fee-note">per student</p>
         </div>
       </div>
