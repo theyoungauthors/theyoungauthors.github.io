@@ -286,6 +286,11 @@
   }
   .fee-card .fee-note{ color:rgba(244,238,223,0.75); font-size:14.5px; margin:0; }
 
+  .fee-payment-row{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .btn-payment{ display:inline-block; background:var(--paper-light); color:var(--maroon); font-weight:700; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; padding:12px 22px; border-radius:var(--radius); white-space:nowrap; transition:background .2s ease,color .2s ease,transform .2s ease; }
+  .btn-payment:hover{ background:var(--brass-light); color:var(--maroon-dark); transform:translateY(-1px); }
+  @media (max-width:600px){ .fee-payment-row{ align-items:flex-start; flex-direction:column; gap:18px; } }
+
   /* ---------- Register CTA ---------- */
   .register-band{
     background:var(--paper-light); border-top:1px solid var(--line); border-bottom:1px solid var(--line);
@@ -483,8 +488,13 @@
       <div class="fees-grid">
         <div class="fee-card">
           <p class="caption">Registration Fee</p>
-          <p class="fee-amount">£150</p>
-          <p class="fee-note">per student</p>
+          <div class="fee-payment-row">
+            <div>
+              <p class="fee-amount">£150</p>
+              <p class="fee-note">per student</p>
+            </div>
+            <a href="PASTE_YOUR_PAYPAL_LINK_HERE" class="btn-payment" target="_blank" rel="noopener" aria-label="Pay £150 registration fee via PayPal">Pay Now</a>
+          </div>
         </div>
       </div>
     </div>
